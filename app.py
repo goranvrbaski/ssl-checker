@@ -86,6 +86,3 @@ if __name__ == '__main__':
     domains = args.domains[0].split(',')
 
     process_domains(domains, args.days)
-
-
-
