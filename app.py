@@ -31,7 +31,7 @@ def get_certificate_info(domain_name: str, port: int = 443) -> dict:
 
         return ssl_info
 
-    except socket.gaierror as ex:
+    except socket.gaierror:
         logger.error(f"{domain_name} can't retrieve certificate info")
 
 
